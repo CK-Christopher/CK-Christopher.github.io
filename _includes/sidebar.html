@@ -1,0 +1,29 @@
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="container">
+      <img src="/profile_picture.jpg" class="profile-picture">
+    </div>
+    <div class="sidebar-about">
+      <h2>
+        <a href="{{ site.baseurl }}">
+          {{ site.title }}
+        </a>
+      </h2>
+      <p class="lead">{{ site.description }}</p>
+    </div>
+    <nav class="sidebar-nav">
+      {% comment %}
+        The code below dynamically generates a sidebar nav of pages with
+        `layout: page` in the front-matter. See readme for usage.
+      {% endcomment %}
+
+      <a class="sidebar-nav-item" href="/index.html">About</a>
+      <a class="sidebar-nav-item" href="/Projects.html">Projects</a>
+      <a class="sidebar-nav-item" href="/education-experience.html">Education + Experience</a>
+      <a class="sidebar-nav-item" href="https://www.linkedin.com/in/christinakirubachristopher/">Linkedin</a>
+      <a class="sidebar-nav-item" href="https://github.com/CK-Christopher">GitHub</a>
+    </nav>
+
+    <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
+  </div>
+</div>
