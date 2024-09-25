@@ -111,7 +111,7 @@ a.sidebar-nav-item:focus {
 
 .column {
   flex: 50%;
-  padding: 5px;
+  padding: 1px;
 }
 
 /* Sticky sidebar
